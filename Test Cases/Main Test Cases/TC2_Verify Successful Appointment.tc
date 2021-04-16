@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed</description>
+   <name>TC2_Verify Successful Appointment</name>
+   <tag></tag>
+   <comment>Story: Book an appointment
+Given that the user has logged into their account
+And Appointment page is displayed
+When he fills in valid information in Appointment page
+Then he should be able to book a new appointment</comment>
+   <testCaseGuid>c880ce98-5804-476f-88e9-c34919fccc5d</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.username</defaultValue>
+      <description></description>
+      <id>f93a8dd8-e02d-4ed9-9323-c2421ccd1841</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.password</defaultValue>
+      <description></description>
+      <id>224c0069-dd50-4c27-ba3b-da7104dc815e</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Seoul CURA Healthcare Center'</defaultValue>
+      <description></description>
+      <id>837a5c3a-9912-4a00-b536-4fd8261dc619</id>
+      <masked>false</masked>
+      <name>facility</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>96b5c402-1c82-4d4d-8e9d-f16c23465052</id>
+      <masked>false</masked>
+      <name>program</name>
+   </variable>
+   <variable>
+      <defaultValue>'default comment,,,'</defaultValue>
+      <description></description>
+      <id>aa607909-27b4-4463-891f-1d4d5422a3ce</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+</TestCaseEntity>
