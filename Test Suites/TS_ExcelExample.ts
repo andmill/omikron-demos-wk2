@@ -37,6 +37,12 @@
          <value>password</value>
          <variableId>a97344e7-5f9c-4936-92a2-d85e5463f3c9</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2dc7bc71-eac6-45bf-815a-aa9413e4997a</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>60102f3c-0ff9-47b9-8765-c5df0ed65b30</guid>
