@@ -9,3 +9,5 @@
 /Drivers/
 ci-samples.zip
 settings/internal/com.kms.katalon.integration.analytics.properties
+.idea/
+*test.prj.iml

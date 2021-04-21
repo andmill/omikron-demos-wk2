@@ -19,7 +19,7 @@ A suite of tests demonstrating concepts as defined by and for Omikron.
 - [x] Short online test management tool demo
 - [] Editing scripts in IntelliJ
 - [x] Excel files - demo working with programmatically
-- [] Extend log file investigation (#11) to demonstrate how to set custom log levels
+- [x] Extend log file investigation (#11) to demonstrate how to set custom log levels
 - [] Inheritance demos - this should perhaps just be pair coding
  
 
