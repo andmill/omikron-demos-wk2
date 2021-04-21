@@ -13,9 +13,9 @@ A suite of tests demonstrating concepts as defined by and for Omikron.
 
 ### Week 3
 
-- [] Short CI and JUnit report demo
+- [x] Short CI and JUnit report demo
 	- [x] Jenkins
-	- [] Gitlab
+	- [x] Gitlab
 - [x] Short online test management tool demo
 - [] Editing scripts in IntelliJ
 - [x] Excel files - demo working with programmatically
