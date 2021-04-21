@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Xray-post-result</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35fcb9d7-b3a9-4f7f-99a2-17bbda7b9472</testCaseGuid>
+   <variable>
+      <defaultValue>'OMI-1'</defaultValue>
+      <description></description>
+      <id>f4f24c97-e893-4c08-84d5-64741f08c8af</id>
+      <masked>false</masked>
+      <name>testKey</name>
+   </variable>
+   <variable>
+      <defaultValue>'PASS'</defaultValue>
+      <description></description>
+      <id>47a9449c-b260-4a9d-a0d9-10354f05edc4</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fcb73269-e1f0-44ba-9ed8-7319535a7e06</id>
+      <masked>false</masked>
+      <name>startTime</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>425fe567-089d-4994-8b7d-8e742d4a146f</id>
+      <masked>false</masked>
+      <name>endTime</name>
+   </variable>
+</TestCaseEntity>

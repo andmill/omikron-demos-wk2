@@ -88,5 +88,11 @@
          <value>comment</value>
          <variableId>aa607909-27b4-4463-891f-1d4d5422a3ce</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35cb7bd1-2b6d-49e9-82e6-8fe01aa3b2bc</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

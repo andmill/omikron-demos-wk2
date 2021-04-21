@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_RegressionTest" time="31.744" tests="2" failures="0" skips="0" errors="0">
+   <testsuite name="TS_RegressionTest" tests="2" failures="0" errors="0" time="31.744" skips="0" timestamp="2021-04-20 12:01:26" hostname="Andre - DESKTOP-ESE35KV" id="Test Suites/TS_RegressionTest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Andre\\git\\omikron-demos\\Reports\\20210420_120111\\TS_RegressionTest\\20210420_120118"/>
+         <property name="logFiles" value="C:\\Users\\Andre\\git\\omikron-demos\\Reports\\20210420_120111\\TS_RegressionTest\\20210420_120118\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Andre\\git\\omikron-demos\\Reports\\20210420_120111\\TS_RegressionTest\\20210420_120118\\1618916516610.png"/>
+         <property name="hostName" value="Andre - DESKTOP-ESE35KV"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="null.null"/>
+         <property name="browser" value="Chrome 89.0.4389.128"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="aa2e8d1f8e3ada220f7f3c45c5c581d8"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC1_Verify Successful Login" time="12.129" classname="Test Cases/Main Test Cases/TC1_Verify Successful Login" status="PASSED">
+         <system-out><![CDATA[2021-04-20 12:01:29 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC1_Verify Successful Login: Test Cases/Main Test Cases/TC1_Verify Successful Login
+
+2021-04-20 12:01:29 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: null
+
+2021-04-20 12:01:29 - [TEST_STEP][PASSED] - println("**** in @BeforeTestCase"): null
+
+2021-04-20 12:01:29 - [TEST_STEP][PASSED] - if (skip_remaining_tests): null
+
+2021-04-20 12:01:29 - [TEST_STEP][PASSED] - comment("Story: Login to CURA system"): Story: Login to CURA system
+
+2021-04-20 12:01:29 - [MESSAGE][INFO] - Story: Login to CURA system
+
+2021-04-20 12:01:29 - [TEST_STEP][PASSED] - comment("Given that the user has the valid login information"): Given that the user has the valid login information
+
+2021-04-20 12:01:29 - [MESSAGE][INFO] - Given that the user has the valid login information
+
+2021-04-20 12:01:29 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2021-04-20 12:01:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-04-20 12:01:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-04-20 12:01:34 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2021-04-20 12:01:34 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-20 12:01:34 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-20 12:01:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2021-04-20 12:01:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2021-04-20 12:01:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), username): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2021-04-20 12:01:37 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2021-04-20 12:01:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2021-04-20 12:01:38 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2021-04-20 12:01:38 - [TEST_STEP][PASSED] - comment("When he logins to CURA system"): When he logins to CURA system
+
+2021-04-20 12:01:38 - [MESSAGE][INFO] - When he logins to CURA system
+
+2021-04-20 12:01:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2021-04-20 12:01:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2021-04-20 12:01:39 - [TEST_STEP][PASSED] - comment("Then he should be able to login successfully"): Then he should be able to login successfully
+
+2021-04-20 12:01:39 - [MESSAGE][INFO] - Then he should be able to login successfully
+
+2021-04-20 12:01:39 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2021-04-20 12:01:40 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2021-04-20 12:01:40 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-20 12:01:41 - [MESSAGE][PASSED] - Browser is closed
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - Start listener action : afterCase: Browser is closed
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - println("**** in @AfterTestCase"): null
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - if (testCaseStatus == "FAILED"): null
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-20 12:01:41 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC2_Verify Successful Appointment" time="16.504" classname="Test Cases/Main Test Cases/TC2_Verify Successful Appointment" status="PASSED">
+         <system-out><![CDATA[2021-04-20 12:01:41 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC2_Verify Successful Appointment: Test Cases/Main Test Cases/TC2_Verify Successful Appointment
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - Start listener action : beforeTestCase: null
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - println("**** in @BeforeTestCase"): null
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - if (skip_remaining_tests): null
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - comment("Story: Book an appointment"): Story: Book an appointment
+
+2021-04-20 12:01:41 - [MESSAGE][INFO] - Story: Book an appointment
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - comment("Given that the user has logged into their account"): Given that the user has logged into their account
+
+2021-04-20 12:01:41 - [MESSAGE][INFO] - Given that the user has logged into their account
+
+2021-04-20 12:01:41 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2021-04-20 12:01:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-04-20 12:01:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-04-20 12:01:45 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2021-04-20 12:01:45 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-20 12:01:45 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-20 12:01:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Common Test Cases/Login"), ["username":username, "password":password], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2021-04-20 12:01:45 - [TEST_CASE][PASSED] - Test Cases/Common Test Cases/Login: Test Cases/Common Test Cases/Login
+
+2021-04-20 12:01:46 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2021-04-20 12:01:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2021-04-20 12:01:46 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), username): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2021-04-20 12:01:47 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2021-04-20 12:01:47 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2021-04-20 12:01:48 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2021-04-20 12:01:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2021-04-20 12:01:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2021-04-20 12:01:49 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2021-04-20 12:01:49 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2021-04-20 12:01:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2021-04-20 12:01:49 - [TEST_STEP][PASSED] - comment("And Appointment page is displayed"): And Appointment page is displayed
+
+2021-04-20 12:01:49 - [MESSAGE][INFO] - And Appointment page is displayed
+
+2021-04-20 12:01:49 - [TEST_STEP][PASSED] - if (true): Text 'default comment,,,' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2021-04-20 12:01:49 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Page_CuraAppointment/lst_Facility"), facility, false): All options with label 'Seoul CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+2021-04-20 12:01:50 - [MESSAGE][PASSED] - All options with label 'Seoul CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+2021-04-20 12:01:50 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Medicaid")): Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+2021-04-20 12:01:50 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+2021-04-20 12:01:50 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Readmission")): Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+2021-04-20 12:01:51 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+2021-04-20 12:01:51 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_VisitDate"), "27/12/2016"): Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+2021-04-20 12:01:52 - [MESSAGE][PASSED] - Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+2021-04-20 12:01:52 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_Comment"), comment): Text 'default comment,,,' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2021-04-20 12:01:53 - [MESSAGE][PASSED] - Text 'default comment,,,' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2021-04-20 12:01:53 - [TEST_STEP][PASSED] - comment("When he fills in valid information in Appointment page"): When he fills in valid information in Appointment page
+
+2021-04-20 12:01:53 - [MESSAGE][INFO] - When he fills in valid information in Appointment page
+
+2021-04-20 12:01:53 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/btn_BookAppointment")): Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+2021-04-20 12:01:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+2021-04-20 12:01:54 - [TEST_STEP][PASSED] - verifyTextPresent("Appointment Confirmation", false): Text 'Appointment Confirmation' is present on page 
+
+2021-04-20 12:01:54 - [MESSAGE][PASSED] - Text 'Appointment Confirmation' is present on page 
+
+2021-04-20 12:01:54 - [TEST_STEP][PASSED] - comment("Then he should be able to book a new appointment"): Then he should be able to book a new appointment
+
+2021-04-20 12:01:54 - [MESSAGE][INFO] - Then he should be able to book a new appointment
+
+2021-04-20 12:01:54 - [TEST_STEP][PASSED] - if (true): Actual text 'default comment,,,' and expected text 'default comment,,,' are matched 
+
+2021-04-20 12:01:54 - [TEST_STEP][PASSED] - verifyMatch(facility, getText(findTestObject("Page_AppointmentConfirmation/lbl_Facility")), false): Actual text 'Seoul CURA Healthcare Center' and expected text 'Seoul CURA Healthcare Center' are matched 
+
+2021-04-20 12:01:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Facility' is: 'Seoul CURA Healthcare Center'
+
+2021-04-20 12:01:54 - [MESSAGE][PASSED] - Actual text 'Seoul CURA Healthcare Center' and expected text 'Seoul CURA Healthcare Center' are matched 
+
+2021-04-20 12:01:54 - [TEST_STEP][PASSED] - verifyMatch("Yes", getText(findTestObject("Page_AppointmentConfirmation/lbl_HospitalReadmission")), false): Actual text 'Yes' and expected text 'Yes' are matched 
+
+2021-04-20 12:01:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_HospitalReadmission' is: 'Yes'
+
+2021-04-20 12:01:55 - [MESSAGE][PASSED] - Actual text 'Yes' and expected text 'Yes' are matched 
+
+2021-04-20 12:01:55 - [TEST_STEP][PASSED] - verifyMatch("Medicaid", getText(findTestObject("Page_AppointmentConfirmation/lbl_Program")), false): Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+2021-04-20 12:01:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Program' is: 'Medicaid'
+
+2021-04-20 12:01:55 - [MESSAGE][PASSED] - Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+2021-04-20 12:01:55 - [TEST_STEP][PASSED] - verifyMatch("27/12/2016", getText(findTestObject("Page_AppointmentConfirmation/lbl_VisitDate")), false): Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+2021-04-20 12:01:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_VisitDate' is: '27/12/2016'
+
+2021-04-20 12:01:55 - [MESSAGE][PASSED] - Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+2021-04-20 12:01:55 - [TEST_STEP][PASSED] - verifyMatch(comment, getText(findTestObject("Page_AppointmentConfirmation/lbl_Comment")), false): Actual text 'default comment,,,' and expected text 'default comment,,,' are matched 
+
+2021-04-20 12:01:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Comment' is: 'default comment,,,'
+
+2021-04-20 12:01:56 - [MESSAGE][PASSED] - Actual text 'default comment,,,' and expected text 'default comment,,,' are matched 
+
+2021-04-20 12:01:56 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2021-04-20 12:01:56 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Andre\\git\\omikron-demos\\Reports\\20210420_120111\\TS_RegressionTest\\20210420_120118\\1618916516610.png]]
+
+2021-04-20 12:01:56 - [TEST_STEP][PASSED] - Start listener action : afterCase: Browser is closed
+
+2021-04-20 12:01:56 - [TEST_STEP][PASSED] - println("**** in @AfterTestCase"): null
+
+2021-04-20 12:01:57 - [TEST_STEP][PASSED] - if (testCaseStatus == "FAILED"): null
+
+2021-04-20 12:01:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-20 12:01:57 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-04-20 12:01:26 - [TEST_SUITE][PASSED] - TS_RegressionTest: Test Cases/Main Test Cases/TC2_Verify Successful Appointment]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

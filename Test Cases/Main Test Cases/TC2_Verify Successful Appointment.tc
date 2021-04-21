@@ -52,4 +52,11 @@ Then he should be able to book a new appointment</comment>
       <masked>false</masked>
       <name>comment</name>
    </variable>
+   <variable>
+      <defaultValue>'OMI-2'</defaultValue>
+      <description></description>
+      <id>35cb7bd1-2b6d-49e9-82e6-8fe01aa3b2bc</id>
+      <masked>false</masked>
+      <name>testKey</name>
+   </variable>
 </TestCaseEntity>

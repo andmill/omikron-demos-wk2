@@ -1,0 +1,51 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_RegressionTest,Chrome 89.0.4389.128,,,2021-04-20 12:01:26,2021-04-20 12:01:57,31.338s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 89.0.4389.128,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,2021-04-20 12:01:29,2021-04-20 12:01:41,12.129s,PASSED
+Start listener action : beforeTestCase,Chrome 89.0.4389.128,,,2021-04-20 12:01:29,2021-04-20 12:01:29,0.005s,PASSED
+"comment(""Story: Login to CURA system"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:29,2021-04-20 12:01:29,0.104s,PASSED
+"comment(""Given that the user has the valid login information"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:29,2021-04-20 12:01:29,0.007s,PASSED
+openBrowser(G_SiteURL),Chrome 89.0.4389.128,,,2021-04-20 12:01:29,2021-04-20 12:01:34,5.000s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-20 12:01:34,2021-04-20 12:01:34,0.312s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 89.0.4389.128,,,2021-04-20 12:01:34,2021-04-20 12:01:36,1.211s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), username)",Chrome 89.0.4389.128,,,2021-04-20 12:01:36,2021-04-20 12:01:37,1.475s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), password)",Chrome 89.0.4389.128,,,2021-04-20 12:01:37,2021-04-20 12:01:38,1.231s,PASSED
+"comment(""When he logins to CURA system"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:38,2021-04-20 12:01:38,0.004s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 89.0.4389.128,,,2021-04-20 12:01:38,2021-04-20 12:01:39,0.956s,PASSED
+"comment(""Then he should be able to login successfully"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:39,2021-04-20 12:01:39,0.005s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Chrome 89.0.4389.128,,,2021-04-20 12:01:39,2021-04-20 12:01:40,0.474s,PASSED
+closeBrowser(),Chrome 89.0.4389.128,,,2021-04-20 12:01:40,2021-04-20 12:01:41,0.913s,PASSED
+Start listener action : afterCase,Chrome 89.0.4389.128,,,2021-04-20 12:01:41,2021-04-20 12:01:41,0.038s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 89.0.4389.128,"Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed",,2021-04-20 12:01:41,2021-04-20 12:01:57,16.504s,PASSED
+Start listener action : beforeTestCase,Chrome 89.0.4389.128,,,2021-04-20 12:01:41,2021-04-20 12:01:41,0.002s,PASSED
+"comment(""Story: Book an appointment"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:41,2021-04-20 12:01:41,0.003s,PASSED
+"comment(""Given that the user has logged into their account"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:41,2021-04-20 12:01:41,0.008s,PASSED
+openBrowser(G_SiteURL),Chrome 89.0.4389.128,,,2021-04-20 12:01:41,2021-04-20 12:01:45,4.014s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-20 12:01:45,2021-04-20 12:01:45,0.263s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""username"":username, ""password"":password], STOP_ON_FAILURE)",Chrome 89.0.4389.128,,,2021-04-20 12:01:45,2021-04-20 12:01:49,3.992s,PASSED
+"comment(""And Appointment page is displayed"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:49,2021-04-20 12:01:49,0.007s,PASSED
+if (true),Chrome 89.0.4389.128,,,2021-04-20 12:01:49,2021-04-20 12:01:53,3.546s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:53,2021-04-20 12:01:53,0.004s,PASSED
+"click(findTestObject(""Page_CuraAppointment/btn_BookAppointment""))",Chrome 89.0.4389.128,,,2021-04-20 12:01:53,2021-04-20 12:01:54,0.688s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Chrome 89.0.4389.128,,,2021-04-20 12:01:54,2021-04-20 12:01:54,0.396s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Chrome 89.0.4389.128,,,2021-04-20 12:01:54,2021-04-20 12:01:54,0.003s,PASSED
+if (true),Chrome 89.0.4389.128,,,2021-04-20 12:01:54,2021-04-20 12:01:56,1.873s,PASSED
+takeScreenshot(),Chrome 89.0.4389.128,,,2021-04-20 12:01:56,2021-04-20 12:01:56,0.688s,PASSED
+Start listener action : afterCase,Chrome 89.0.4389.128,,,2021-04-20 12:01:56,2021-04-20 12:01:57,0.690s,PASSED

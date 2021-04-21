@@ -30,4 +30,11 @@ Then he should be able to login successfully</comment>
       <masked>false</masked>
       <name>password</name>
    </variable>
+   <variable>
+      <defaultValue>'OMI-3'</defaultValue>
+      <description></description>
+      <id>95d2b565-2fae-4b98-b11c-72d2241d4789</id>
+      <masked>false</masked>
+      <name>testKey</name>
+   </variable>
 </TestCaseEntity>

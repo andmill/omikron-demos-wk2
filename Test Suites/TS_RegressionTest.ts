@@ -71,4 +71,22 @@
          <variableId>aa607909-27b4-4463-891f-1d4d5422a3ce</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5c7537a7-e95f-4e2d-889b-327ce164cace</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Main Test Cases/TC3_Verify Successful Login - ErrorStop</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f7542a15-4287-440e-b806-52ca16f9babe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae498ce8-963a-4386-a309-512d4a1cbc6c</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
