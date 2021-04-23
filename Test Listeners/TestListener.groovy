@@ -64,14 +64,15 @@ class TestListener {
 		
 		def dateTime = new Date();
 		endTime = dateTime.format('yyyy-MM-dd') + 'T' + dateTime.format('HH:mm:ss');
-		println("end time: " + endTime)
+		println("end time: " + endTime);
 		
 		String status = "PASS";
 		if (testCaseContext.testCaseStatus=="FAILED") status = "FAIL";
 		String testKey = testCaseContext.getTestCaseVariables().get("testKey").toString();
 		
 		// Xray reporting
-		WS.sendRequest(findTestObject('Xray/POST-test-result', [('testKey') : testKey, ('status') : status, ('startTime') : startTime, ('endTime') : endTime]))
+		WS.sendRequest(findTestObject('Xray/POST-test-result', [('testKey') : testKey, ('status') : status,
+			 ('startTime') : startTime, ('endTime') : endTime]));
 //		WebUI.callTestCase(findTestCase('Common Test Cases/Xray-post-result'), [('testKey') : testKey, ('status') : status, ('startTime') : startTime, ('endTime') : endTime])
 	}
 	

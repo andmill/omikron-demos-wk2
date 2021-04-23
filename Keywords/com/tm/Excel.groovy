@@ -37,10 +37,10 @@ public class Excel {
 
 	@Keyword
 	def excelDemo () {
-		FileInputStream file = new FileInputStream (new File("C:\\Users\\Andre\\Downloads\\TestData-Demo (3).xlsx"));
+		FileInputStream file = new FileInputStream (new File("C:\\Users\\Andre\\Downloads\\TestData-Demo (2).xlsx"));
 		// create new excel workbook from the file input
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheet("Sheet2");
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
 
 		// read data
 		String cellData=sheet.getRow(1).getCell(1).getStringCellValue();
@@ -50,12 +50,11 @@ public class Excel {
 		String text = "DemoUpdate_" + System.currentTimeMillis().toString();
 		println("Data to add = " + text);
 		sheet.getRow(1).createCell(1).setCellValue(text);
-		sheet.
 
 		file.close();
 
 		// save/write the file - same name will overwrite
-		FileOutputStream outFile =new FileOutputStream(new File("C:\\Users\\Andre\\Downloads\\TestData-Demo (3).xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File("C:\\Users\\Andre\\Downloads\\TestData-Demo (2).xlsx"));
 		workbook.write(outFile);
 		outFile.close();
 	}
