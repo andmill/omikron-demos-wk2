@@ -9,7 +9,7 @@ Steps:
 
 Expected result:
 'Appointment' section is displayed after successful login</description>
-   <name>Files</name>
+   <name>File_Upload</name>
    <tag></tag>
    <comment>Story: Login to CURA system
 Given that the user has valid login information

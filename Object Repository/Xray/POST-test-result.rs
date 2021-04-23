@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\t\&quot;tests\&quot; : [\n\t\t{\n            \&quot;testKey\&quot; : \&quot;${testKey}\&quot;,\n            \&quot;start\&quot; : \&quot;${startTime}\&quot;,\n            \&quot;finish\&quot; : \&quot;${endTime}\&quot;,\n            \&quot;comment\&quot; : \&quot;Demo comment 1.\&quot;,\n            \&quot;status\&quot; : \&quot;${status}\&quot;\n        }\n    ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n\t\&quot;tests\&quot; : [\n\t\t{\n            \&quot;testKey\&quot; : \&quot;${testKey}\&quot;,\n            \&quot;start\&quot; : \&quot;${startTime}\&quot;,\n            \&quot;finish\&quot; : \&quot;${endTime}\&quot;,\n            \&quot;comment\&quot; : \&quot;Demo comment 1. \\\\nVersion: ${version}\&quot;,\n            \&quot;status\&quot; : \&quot;${status}\&quot;\n        }\n    ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -33,7 +33,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://sandbox.xpand-it.com/rest/raven/1.0/import/execution</restUrl>
+   <restUrl>https://sandbox.xpand-it.com/rest/raven/2.0/import/execution</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -69,6 +69,13 @@
       <id>36e95ab5-bdbe-49a8-b5e6-b2660788209f</id>
       <masked>false</masked>
       <name>endTime</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.version</defaultValue>
+      <description></description>
+      <id>dc2d7128-294d-45ed-8918-3549dd344bb3</id>
+      <masked>false</masked>
+      <name>version</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -44,4 +44,9 @@
       <initValue>false</initValue>
       <name>skip_remaining_tests</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1.2'</initValue>
+      <name>version</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
